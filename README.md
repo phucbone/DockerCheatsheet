@@ -207,11 +207,11 @@ Command|Description
 FROM *<u>IMAGE_NAME</u>* | Docker base image name.
 MAINTAINER *<u>EMAIL</u>*|Maintainer’s email address.
 COPY *<u>SRC-FILE-ON-HOST</u>* *<u>DST-FILE-ON-DOCKER</u>*|Copy files from host to docker image.
-RUN <u>*COMMAND*</u>|Run a command when building the image.
-USER <u>*USERNAME*</u>|Set the default user name.
+RUN *<u>COMMAND</u>*|Run a command when building the image.
+USER *<u>USERNAME</u>*|Set the default user name.
 WORKDIR *<u>DIR</u>*|Set the default working directory.
-CMD <u>*COMMAND*</u>|Start up default command which can be overridden by docker cli.
-ENTRYPOINT <u>*COMMAND*</u>|Start up default command which cannot be overridden by docker cli.
+CMD *<u>COMMAND</u>*|Start up default command which can be overridden by docker cli.
+ENTRYPOINT *<u>COMMAND</u>*|Start up default command which cannot be overridden by docker cli.
 ENV *<u>ENV-NAME</u>* *<u>ENV-VALUE</u>*|Environment variables.
 
 ## Docker Config
@@ -223,3 +223,7 @@ ENV *<u>ENV-NAME</u>* *<u>ENV-VALUE</u>*|Environment variables.
 	"insecure-registries" : ["<your-docker-register-server-ip-or-hostname>"]
 }
 ```
+
+[Back to CheatSheets Page](https://phucbone.github.io/Cheatsheets/)
+
+[Back to Main Page](https://phucbone.github.io/)
