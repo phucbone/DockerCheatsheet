@@ -201,7 +201,8 @@ docker run -v /var/run/docker.sock:/var/run/docker.sock -it <image-name>
 ```
 
 ## Dockerfile Builder Commands
-**Command**|**Description**
+
+Command|Description
 ---|---
 FROM *<u>IMAGE_NAME</u>* | Docker base image name.
 MAINTAINER *<u>EMAIL</u>*|Maintainer’s email address.
