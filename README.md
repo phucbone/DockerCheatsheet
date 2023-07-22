@@ -58,7 +58,6 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
 
-
 # Commands
 ## Image Management
 
@@ -92,9 +91,8 @@ docker push <image-name>
 docker images -qf dangling=true | xargs docker rmi
 ```
 
-
-## Container Management
-# Create a docker container.
+# Container Management
+## Create a docker container.
 
 ```shell
 docker create <image-name>
@@ -200,7 +198,7 @@ docker network disconnect <docker-network-name> <container-id-or-name>
 docker run -v /var/run/docker.sock:/var/run/docker.sock -it <image-name>
 ```
 
-## Dockerfile Builder Commands
+# Dockerfile Builder Commands
 
 Command|Description
 ---|---
@@ -214,8 +212,8 @@ CMD *<u>COMMAND</u>*|Start up default command which can be overridden by docker 
 ENTRYPOINT *<u>COMMAND</u>*|Start up default command which cannot be overridden by docker cli.
 ENV *<u>ENV-NAME</u>* *<u>ENV-VALUE</u>*|Environment variables.
 
-## Docker Config
-### Insecure Docker Registry
+# Docker Config
+## Insecure Docker Registry
 
 ```shell
 # Add the following content to /etc/docker/daemon.json if you using an insecure docker registry.
